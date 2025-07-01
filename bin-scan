@@ -8,7 +8,15 @@ def main():
     
 
     parser.add_argument("--target", required=True, help="The target to scan (e.g., domain name or IP address).")
+    
+
+
     parser.add_argument("--scan_type", required=True, help="The type of scan to perform (e.g., dig, port).")
+    parser.add_argument("--version_detect", action="store_true", help="Enable service version detection (nmap -sV).")
+
+
+
+
 
 
     args = parser.parse_args()
@@ -19,7 +27,14 @@ def main():
         if args.scan_type == "dig":
             result = subprocess.run(["dig", args.target], capture_output=True, text=True, check=True)
         elif args.scan_type == "port":
-            result = subprocess.run(["nmap", args.target], capture_output=True, text=True, check=True)
+            
+
+            nmap_command = ["nmap", args.target]
+            if args.version_detect:
+                nmap_command.append("-sV")
+            result = subprocess.run(nmap_command, capture_output=True, text=True, check=True)
+
+
         else:
             print("Invalid scan type.  Please choose 'dig' or 'port'.")
             return

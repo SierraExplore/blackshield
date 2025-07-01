@@ -18,3 +18,12 @@ def test_bin_scan_port():
 
 
 
+def test_bin_scan_port_version():
+    result = subprocess.run(["/workspace/bin-scan", "--target", "example.com", "--scan_type", "port", "--version_detect"], capture_output=True, text=True, check=True)
+    assert "AkamaiGHost" in result.stdout
+
+
+
+
+
+
