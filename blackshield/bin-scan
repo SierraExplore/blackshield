@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+import argparse
+import json
+import os
+import subprocess
+import time
+from typing import List, Dict
+
+# Define the base directory for the project
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Define the directory for configurations
+CONFIG_DIR = os.path.join(BASE_DIR, "config")
+
+# Define the directory for reports
+REPORTS_DIR = os.path.join(BASE_DIR, "reports")
+
+# Create the config and reports directories if they don't exist
+os.makedirs(CONFIG_DIR, exist_ok=True)
+os.makedirs(REPORTS_DIR, exist_ok=True)
+
+import socket
+
+return results

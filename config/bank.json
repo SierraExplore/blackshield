@@ -1,0 +1,27 @@
+
+{
+  "type": "bank",
+  "scan_targets": ["ssl", "http_headers", "open_ports", "expired_cert"],
+  "settings": {
+    "database_port": 3306,
+    "compliance_standard": "PCI-DSS"
+  },
+  "vulnerabilities": {
+    "ssl/tls configuration weakness": {
+      "priority": "High",
+      "remediation": "Upgrade SSL/TLS configuration"
+    },
+    "missing http security headers": {
+      "priority": "Medium",
+      "remediation": "Implement missing HTTP security headers"
+    },
+    "unnecessary open ports": {
+      "priority": "Medium",
+      "remediation": "Close unnecessary open ports"
+    },
+    "expired ssl certificate": {
+      "priority": "Critical",
+      "remediation": "Renew SSL certificate immediately"
+    }
+  }
+}

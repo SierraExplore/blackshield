@@ -1,0 +1,1 @@
+{ "type": "bank", "settings": { "compliance": "PCI-DSS", "encryption": "AES-256", "internal_systems": [ "KYC DB", "Online Banking" ], "scan_targets": [ "ssl", "http_headers", "kyc_db_port", "expired_cert" ] } }

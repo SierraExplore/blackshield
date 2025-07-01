@@ -1,0 +1,30 @@
+
+{
+  "type": "telco",
+  "scan_targets": ["unnecessary open ports", "missing http security headers"],
+  "settings": {
+    "api_endpoint": "https://api.telco.com"
+  },
+  "vulnerabilities": {
+    "unnecessary open ports": {
+
+
+    "unnecessary open ports": {
+      "priority": "High",
+      "remediation": "Close unnecessary open ports"
+    },
+    "missing http security headers": {
+      "priority": "Medium",
+      "remediation": "Implement missing HTTP security headers"
+    }
+
+
+      "priority": "High",
+      "remediation": "Close unnecessary open ports"
+    },
+    "missing http security headers": {
+      "priority": "Medium",
+      "remediation": "Implement missing HTTP security headers"
+    }
+  }
+}

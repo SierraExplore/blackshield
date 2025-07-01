@@ -1,0 +1,40 @@
+{
+    "target": "example.com",
+    "vulnerabilities": [
+        {
+            "name": "ssl/tls configuration weakness",
+            "severity": "Medium",
+            "priority": "High",
+            "remediation": "Upgrade SSL/TLS configuration",
+            "false_positive": false,
+            "description": "The SSL/TLS configuration is weak. Consider using stronger ciphers and disabling SSLv3."
+        },
+        {
+            "name": "missing http security headers",
+            "severity": "Low",
+            "priority": "Medium",
+            "remediation": "Implement missing HTTP security headers",
+            "false_positive": false,
+            "description": "The HTTP headers are missing security-related settings (e.g., HSTS, X-Frame-Options)."
+        },
+        {
+            "name": "unnecessary open ports",
+            "severity": "Medium",
+            "priority": "Medium",
+            "remediation": "Close unnecessary open ports",
+            "false_positive": false,
+            "description": "Unnecessary open ports detected. Consider closing unused ports."
+        },
+        {
+            "name": "expired ssl certificate",
+            "severity": "High",
+            "priority": "Critical",
+            "remediation": "Renew SSL certificate immediately",
+            "false_positive": false,
+            "description": "The SSL certificate has expired. Renew the certificate immediately."
+        }
+    ],
+    "summary": {
+        "total_vulnerabilities": 4
+    }
+}

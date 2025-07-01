@@ -1,0 +1,37 @@
+
+
+{
+  "type": "government",
+  "scan_targets": ["ssl/tls configuration weakness", "missing http security headers", "expired ssl certificate"],
+  "settings": {
+    "website_url": "https://www.gov.example.com"
+  }
+
+
+
+
+
+
+  ,
+  "vulnerabilities": {
+    "ssl/tls configuration weakness": {
+      "priority": "High",
+      "remediation": "Upgrade SSL/TLS configuration"
+    },
+    "missing http security headers": {
+      "priority": "Medium",
+      "remediation": "Implement missing HTTP security headers"
+    },
+    "expired ssl certificate": {
+      "priority": "Critical",
+      "remediation": "Renew SSL certificate immediately"
+    }
+  }
+
+
+
+
+
+
+}
+

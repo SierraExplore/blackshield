@@ -1,0 +1,27 @@
+
+
+{
+  "type": "enterprise",
+  "scan_targets": ["unnecessary open ports", "missing http security headers"],
+  "settings": {
+    "office_ip_range": "192.168.1.0/24"
+  }
+
+
+
+  ,
+  "vulnerabilities": {
+    "unnecessary open ports": {
+      "priority": "High",
+      "remediation": "Close unnecessary open ports"
+    },
+    "missing http security headers": {
+      "priority": "Medium",
+      "remediation": "Implement missing HTTP security headers"
+    }
+  }
+
+
+
+}
+

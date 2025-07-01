@@ -1,0 +1,35 @@
+
+
+
+{
+  "type": "executive",
+  "scan_targets": ["ssl/tls configuration weakness", "missing http security headers"],
+  "settings": {
+    "email_address": "executive@example.com"
+  }
+
+
+
+
+
+
+  ,
+  "vulnerabilities": {
+    "ssl/tls configuration weakness": {
+      "priority": "High",
+      "remediation": "Upgrade SSL/TLS configuration"
+    },
+    "missing http security headers": {
+      "priority": "Medium",
+      "remediation": "Implement missing HTTP security headers"
+    }
+  }
+
+
+
+
+
+
+}
+
+

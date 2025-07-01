@@ -1,0 +1,28 @@
+{
+    "results": {
+        "target": "example.com",
+        "vulnerabilities": [
+            {
+                "name": "SSL Weakness",
+                "severity": "High",
+                "description": "SSL certificate is outdated."
+            },
+            {
+                "name": "HTTP Headers Missing",
+                "severity": "Medium",
+                "description": "Missing security-related HTTP headers."
+            },
+            {
+                "name": "KYC DB Port Open",
+                "severity": "Critical",
+                "description": "KYC database port is exposed."
+            },
+            {
+                "name": "Expired Certificate",
+                "severity": "High",
+                "description": "SSL certificate has expired."
+            }
+        ]
+    },
+    "analysis": "AI analysis: Potential vulnerabilities found. Further investigation needed."
+}
