@@ -1,0 +1,1 @@
+{"title": "Fix bin-scan script", "body": "Fixes the bin-scan script to correctly parse arguments and run tests.", "head": "fix-bin-scan", "base": "master"}
